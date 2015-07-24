@@ -42,7 +42,9 @@ function madison_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'madison' ),
+		'primary' 	=> esc_html__( 'Primary Menu', 'madison' ),
+		'drawer'	=> esc_html__( 'Drawer Menu', 'madison' ),
+		'footer'	=> esc_html__( 'Footer Menu', 'madison' ) 
 	) );
 
 	/*
@@ -71,7 +73,7 @@ function madison_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'madison_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => 'f5f5f5',
 		'default-image' => '',
 	) ) );
 }
@@ -86,7 +88,7 @@ add_action( 'after_setup_theme', 'madison_setup' );
  * @global int $content_width
  */
 function madison_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'madison_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'madison_content_width', 900 );
 }
 add_action( 'after_setup_theme', 'madison_content_width', 0 );
 
@@ -102,8 +104,58 @@ function madison_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Drawer', 'madison' ),
+		'id'            => 'drawer-1',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer 1', 'madison' ),
+		'id'            => 'footer-1',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer 2', 'madison' ),
+		'id'            => 'footer-2',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer 3', 'madison' ),
+		'id'            => 'footer-3',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer 4', 'madison' ),
+		'id'            => 'footer-4',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'madison_widgets_init' );
