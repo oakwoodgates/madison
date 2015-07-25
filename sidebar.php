@@ -10,7 +10,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
-	<div class="mdl-grid mdl-grid--no-spacing">
+	<div class="mdl-grid">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div>
 </div>

@@ -57,7 +57,7 @@
     </header>
       <div class="madison-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="madison-drawer-header">
-          <img src="images/user.jpg" class="madison-avatar">
+          <img src="//45.55.205.177/wp-content/uploads/2015/07/wpguru4u.jpg" class="madison-avatar">
           <div class="madison-avatar-dropdown">
             <span>hello@example.com</span>
             <div class="mdl-layout-spacer"></div>
