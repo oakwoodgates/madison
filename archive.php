@@ -9,8 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -20,6 +19,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+<div class="mdl-cell mdl-cell--12-col grid col-centered mason-container">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -35,8 +35,8 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
+</div>
+			<?php // the_posts_navigation(); ?>
 
 		<?php else : ?>
 
@@ -44,8 +44,5 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 <?php get_footer(); ?>

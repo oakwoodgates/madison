@@ -102,10 +102,10 @@ function madison_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'madison' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_widget' => '<aside id="%1$s" class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop mdl-card mdl-shadow--2dp widget %2$s">',
+		'after_widget'  => '</div></aside>',
+		'before_title'  => '<header class="widget-header mdl-card__title"><h3 class="widget-title">',
+		'after_title'   => '</h3></header><div class="widget-content mdl-card__supporting-text">',
 	) );
 
 	register_sidebar( array(
@@ -117,46 +117,6 @@ function madison_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 1', 'madison' ),
-		'id'            => 'footer-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 2', 'madison' ),
-		'id'            => 'footer-2',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 3', 'madison' ),
-		'id'            => 'footer-3',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 4', 'madison' ),
-		'id'            => 'footer-4',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>',
-	) );
 }
 add_action( 'widgets_init', 'madison_widgets_init' );
 
@@ -164,11 +124,32 @@ add_action( 'widgets_init', 'madison_widgets_init' );
  * Enqueue scripts and styles.
  */
 function madison_scripts() {
+	wp_enqueue_style( 'madison-mdl-roboto', '//fonts.googleapis.com/css?family=Roboto:300,400,500,700' );
+
+	wp_enqueue_style( 'madison-mdl-icons', '//fonts.googleapis.com/icon?family=Material+Icons' );
+
+//	$primary = get_theme_mod( 'primary_color', 'indigo' );
+//	$secondary = get_theme_mod( 'secondary_color', 'pink' );
+
+//	wp_enqueue_style( 'madison-mdl-css', '//storage.googleapis.com/code.getmdl.io/1.0.1/material.'.$primary.'-'.$secondary.'.min.css' );
+	wp_enqueue_style( 'madison-mdl-css', '//storage.googleapis.com/code.getmdl.io/1.0.1/material.indigo-pink.min.css' );
+//	wp_enqueue_style( 'madison-mdl-css', '//www.getmdl.io/templates/dashboard/material.min.css' );
+
 	wp_enqueue_style( 'madison-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'madison-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+//	wp_enqueue_script( 'madison-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'madison-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+//	wp_enqueue_script( 'madison-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+//	wp_enqueue_style( 'mdlwp-style', get_stylesheet_directory_uri() . '/style.min.css' );
+
+	wp_enqueue_script( 'madison-mdl-js', '//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js', array(), '1.0.1', true );
+
+//	wp_enqueue_script( 'masonry-js', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js', array('jquery'), '1.0.1', true );
+	wp_enqueue_script( 'jquery-masonry', array( 'jquery' ), '1.0.1', true );
+
+	wp_enqueue_script( 'madison-js', get_template_directory_uri() . '/js/theme.js', array('jquery'), '1.0.1', true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -200,3 +181,18 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Meta Box
+ */
+require get_template_directory() . '/inc/meta-box.php';
+
+/**
+ * Extra functions and such
+ */
+require get_template_directory() . '/inc/rock-n-roll.php';
+
+/**
+ * Walker menu for our drawer menu
+ */
+require get_template_directory() . '/inc/nav-walker-drawer.php';
