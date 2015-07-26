@@ -32,7 +32,7 @@
 <div id="page" class="hfeed site madison-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'madison' ); ?></a>
 
-	<header id="masthead" class="site-header madison-header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600" role="banner">
+	<header id="masthead" class="site-header madison-header mdl-layout__header mdl-color--blue-grey-900 mdl-color-text--blue-grey-50" role="banner">
 		<div class="site-branding mdl-layout__header-row">
 			<span class="site-title mdl-layout-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
           <div class="mdl-layout-spacer"></div>
