@@ -196,3 +196,13 @@ require get_template_directory() . '/inc/rock-n-roll.php';
  * Walker menu for our drawer menu
  */
 require get_template_directory() . '/inc/nav-walker-drawer.php';
+
+/**
+ * Woocommerce things and stuff
+ */
+require get_template_directory() . '/inc/woocommerce.php';
+
+/**
+ * Metaboxes with CMB2
+ */
+require get_template_directory() . '/inc/cmb2.php';

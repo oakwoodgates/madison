@@ -75,11 +75,11 @@
         <?php 
         wp_nav_menu( 
         	array( 
-        		'theme_location' 	=> 'primary',
-				'container'			=> 'nav',
-				'container_class'	=> 'madison-navigation mdl-navigation mdl-color--blue-grey-800',
-				'items_wrap' 		=> '%3$s',
-				'walker'			=> new madison_drawer_walker_nav_menu()
+            'theme_location' 	=> 'primary',
+            'container'			=> 'nav',
+            'container_class'	=> 'madison-navigation mdl-navigation mdl-color--blue-grey-800',
+            'items_wrap' 		=> '%3$s',
+            'walker'			=> new madison_drawer_walker_nav_menu()
         		) 
         	); 
         ?>
@@ -91,4 +91,4 @@
         </nav>
       </div>    
       <main class="mdl-layout__content mdl-color--grey-100">
-        <div id="content" class="site-content mdl-grid madison-content">
+        <div id="content" class="site-content mdl-grid madison-content mdl-grid--no-spacing">
