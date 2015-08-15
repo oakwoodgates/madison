@@ -40,9 +40,9 @@ get_header( 'shop' ); ?>
 			do_action( 'woocommerce_archive_description' );
 		?>
 </div>
-		<?php if ( have_posts() ) : ?>
+<div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-desktop">
 
-<div class="mdl-cell mdl-cell--8-col">
+		<?php if ( have_posts() ) : ?>
 
 			<?php
 				/**
@@ -76,13 +76,14 @@ get_header( 'shop' ); ?>
 				 */
 				do_action( 'woocommerce_after_shop_loop' );
 			?>
-</div>
 
 		<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
 
 			<?php wc_get_template( 'loop/no-products-found.php' ); ?>
 
 		<?php endif; ?>
+
+</div>
 
 	<?php
 		/**
@@ -98,7 +99,7 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action( 'woocommerce_sidebar' );
+//		do_action( 'woocommerce_sidebar' );
 	?>
-
+<?php get_sidebar( 'services' ); ?>
 <?php get_footer( 'shop' ); ?>

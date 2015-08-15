@@ -56,7 +56,14 @@ $url = $thumb['0'];
     <img src="<?php echo $url; ?>" />
   	</a>
 	<a class="mdl-card__title" href="<?php the_permalink() ?>">
-			<h3 class="mdl-card__title-text"><?php the_title(); ?></h3>
+			<h3 class="mdl-card__title-text">
+			<?php 
+				if ( get_post_meta( get_the_ID(), '_madison_product_archive_title', true ) ) {
+					echo get_post_meta( get_the_ID(), '_madison_product_archive_title', true );
+				} else {
+					the_title();
+				}
+			?></h3>
 
 		<?php
 			/**
@@ -71,7 +78,7 @@ $url = $thumb['0'];
 
 	</a>
 
-	<div class="mdl-card__supporting-text  mdl-card--expand">
+	<div class="mdl-card__supporting-text mdl-card--expand">
 
 		<?php 
 		if ( get_post_meta( get_the_ID(), '_madison_product_archive_description', true ) ) {

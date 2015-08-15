@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-
+<div class="mdl-cell mdl-cell--12-col mdl-grid npom w100">
 	<div class="mdl-cell mdl-cell--8-col">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -29,8 +29,8 @@ get_header(); ?>
 
 	</div>
 
-<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 
-
+</div>
 
 <?php get_footer(); ?>

@@ -9,3 +9,13 @@ jQuery(document).ready(function($){
  });
  
 });
+
+jQuery(function($) {
+    $('#input_1_1, #input_1_2, #input_1_3').addClass('mdl-textfield__input');
+    $('.gfield_label').addClass('mdl-textfield__label');    
+});
+
+jQuery( document ).ajaxComplete(function($) {
+    $('#input_1_1, #input_1_2, #input_1_3').addClass('mdl-textfield__input');
+    $('.gfield_label').addClass('mdl-textfield__label'); 
+  });

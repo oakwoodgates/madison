@@ -1,17 +1,14 @@
 /*
 Theme Name: madison
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme URI: http://wpguru4u.com/
+Author: WPguru4u
+Author URI: http://wpguru4u.com/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: madison
 Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 
 madison is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -674,6 +671,7 @@ html, body {
 
 .madison-content {
   max-width: 1080px;
+  margin: 0 auto;
 }
 @media (min-width: 38.75em) {
   .mdl-grid.mdl-grid--no-spacing.madison-content {
@@ -857,10 +855,34 @@ a {
   .madison-reviews.mdl-cell--5-col-desktop {
       width:41.6666666667%;
       flex-flow:column wrap;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;      
   }
   #reviews.right{
+    -webkit-flex: 2 2 auto;
+    -ms-flex: 2 2 auto;    
     flex: 2 2 auto;
   }
+}
+
+@media (max-width: 839px) {
+  .madison-reviews.mdl-cell--8-col-tablet {
+      width: 100%;
+  }
+}
+
+.child {
+    position: absolute;
+    height: calc(100% - 51px);
+    padding-bottom: 10px!important;
+}
+
+.scrollable {
+     overflow-y:auto;
 }
 /* woo overrides */
 .woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
@@ -871,6 +893,17 @@ a {
 }
 .woocommerce #reviews #comments ol.commentlist{
   padding:0;
+}
+
+.woocommerce .woocommerce-message {
+  margin-bottom: 0!important;
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  width: 100%;
 }
 /* Product Archive Cards */
 .product-card h3 {
@@ -885,15 +918,28 @@ a {
   font-size: .7em;
   margin-top: -10px;
   margin-right: -10px;
-  color: #B71C1C;
+  color: #FFA726;
+}
+.woocommerce .product-card .star-rating:before {
+  color:#FFA726;
+}
+.woocommerce .star-rating {
+  color:#FFA726;
 }
 /* because sometimes we like to be full size */
 .product-card .mdl-card__supporting-text,
 .order-form .mdl-card__supporting-text,
-.product .mdl-card__supporting-text{
+.product .mdl-card__supporting-text {
   width:100%;
+}
+
+.product-card .mdl-card__supporting-text,
+.order-form .mdl-card__supporting-text {
   padding-top:0;
-  padding-bottom:0;
+}
+
+.order-form .mdl-card__supporting-text {
+  padding-bottom: 0;
 }
 
 .product-card .mdl-card__supporting-text p {
@@ -924,11 +970,74 @@ a {
   border-radius: 0 0 50% 0;
   top: -0.4em;
 }
-
+/* order form */
+.tm-extra-product-options .tm-epo-field-label {
+  font-weight: 500;
+}
+.order-form h3.tm-epo-field-label,
+.order-form h5.tm-epo-field-label {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 300;
+  letter-spacing: .02em;
+}
+.order-form .mdl-radio {
+  font-size: 14px;
+}
+.order-form li .amount {
+  color:#A0A0A0;
+}
+.order-form .tm-epo-totals {
+  padding-top: 0;
+}
+.order-form dl {
+  margin:0;
+}
+.woocommerce .order-form form.cart {
+  margin-bottom: 1.2em!important;
+}
+.order-form .tm-extra-product-options .tm-extra-product-options-field {
+  margin:0;
+}
+.order-form .mdl-checkbox.is-checked .mdl-checkbox__tick-outline,
+.order-form .mdl-radio__inner-circle {
+  background-color: #4CAF50;
+}
+.order-form .mdl-checkbox.is-checked .mdl-checkbox__box-outline,
+.order-form .mdl-radio.is-checked .mdl-radio__outer-circle {
+  border-color:#4CAF50;
+}
+.order-form .mdl-checkbox__ripple-container .mdl-ripple,
+.order-form .mdl-radio__ripple-container .mdl-ripple {
+  background-color: #4CAF50;
+}
+.order-form .mdl-radio.is-upgraded,
+.order-form .mdl-checkbox.is-upgraded {
+  padding-top: 2px;
+  padding-left: 18px;
+}
+.starting-price-box div {
+  display: inline-block;
+}
+.starting-price-box .base-text {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.starting-price-box .price {
+  padding-left: 5px;
+  vertical-align: baseline;  
+}
 /* helpers */
 .npom {
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 839px) {
+  .m-npom {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .col-centered {
@@ -942,28 +1051,102 @@ a {
     }
 }
 
+.w100 {
+  width:100%;
+}
 /* things and stuff */
 .order-form .mdl-card {
   width: 100%;
 }
 
+  .related-services {
+      width: 100%;
+  }
 
-.main-container-test {
-    height:100%;
-    display:flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    -webkit-align-content: stretch;
-    align-content: stretch;
+.related-services h2 {
+  margin-left: 8px;
 }
 
-.child {
-    position: absolute;
-    height: calc(100% - 51px);
-    padding-bottom: 10px!important;
+.tmcp-field-wrap.mdl-js-radio .amount {
+  float:right;
 }
 
-.scrollable {
-     overflow-y:auto;
+.woocommerce h3.comment-reply-title {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+  line-height: 1;
+  padding: 16px 0;
+}
+
+.mdl-card.small-height {
+  min-height: 50px;
+}
+
+p.woocommerce-verification-required {
+  padding: 16px;
+  margin: 0;
+  text-align: center;  
+}
+
+.mdl-card__supporting-text {
+  color:#565454;
+}
+
+.gform_validation_container, 
+.gform_wrapper .gform_validation_container, 
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container, 
+body .gform_wrapper li.gform_validation_container, 
+body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
+  display: none!important;
+  position: absolute!important;
+  left: -9000px; 
+}
+#gform_1 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#gform_1 .gfield_required {
+  display: none;
+}
+#gform_1 .mdl-textfield {
+  display:block;
+}
+.mdl-textfield__label {
+  color:#555;
+}
+#gform_1 .mdl-textfield__input {
+  border-color:#aaa;
+}
+#gform_1 ul {
+  margin:0;
+  padding:0;
+}
+textarea#input_1_3 {
+  height: 150px;
+  max-width: 100%;
+}
+#gform_1 #field_1_3 .mdl-textfield__label:after {
+  bottom:26px;
+}
+#gform_submit_button_1 {
+  float: right;
+}
+input#input_1_1, 
+input#input_1_2, 
+textarea#input_1_3 {
+  width: 100%;
+}
+
+.gfield_description.validation_message {
+  background-color: #EF5350;
+  padding: 5px 0;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.gfield_error input, .gfield_error textarea {
+  border-color: #EF5350;
+  border: 2px solid #EF5350;
+  margin-bottom: 3px;
 }

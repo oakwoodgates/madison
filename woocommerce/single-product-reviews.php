@@ -53,7 +53,7 @@ if ( ! comments_open() ) {
 			</div>	
 		</div>
 	</div>
-	<div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop mdl-card mdl-shadow--2dp">
+	<div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop mdl-card mdl-shadow--2dp small-height">
 
 		<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->id ) ) : ?>
 

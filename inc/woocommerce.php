@@ -22,15 +22,6 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
 // add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
 // add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
 
-function my_theme_wrapper_start() {
-  echo '<div class="mdl-cell mdl-cell--8-col">';
-}
-
-function my_theme_wrapper_end() {
-  echo '</div>';
-}
-
-
 /**
  * woocommerce_before_shop_loop hook
  *
@@ -90,7 +81,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
  *
  * @link http://docs.woothemes.com/document/editing-product-data-tabs/
  */
-// add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
 
 function woo_remove_product_tabs( $tabs ) {
 
@@ -101,3 +92,21 @@ function woo_remove_product_tabs( $tabs ) {
     return $tabs;
 
 }
+
+/**
+ * ftw
+ */
+add_filter( 'woocommerce_billing_fields', 'patricks_billing_fields', 20 );
+function patricks_billing_fields( $fields ) {
+//	unset( $fields['billing_country'] );
+//	unset( $fields['billing_first_name'] );
+//	unset( $fields['billing_last_name'] );
+	unset( $fields['billing_company'] );
+	unset( $fields['billing_address_1'] );
+	unset( $fields['billing_address_2'] );
+	unset( $fields['billing_city'] );
+	unset( $fields['billing_state'] );
+	unset( $fields['billing_postcode'] );
+	unset( $fields['billing_phone'] );
+	return $fields;
+ }

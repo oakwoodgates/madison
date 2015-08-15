@@ -57,7 +57,7 @@
     </header>
       <div class="madison-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="madison-drawer-header">
-          <img src="//45.55.205.177/wp-content/uploads/2015/07/wpguru4u.jpg" class="madison-avatar">
+          <!-- <img src="//45.55.205.177/wp-content/uploads/2015/07/wpguru4u.jpg" class="madison-avatar"> -->
           <div class="madison-avatar-dropdown">
             <span>hello@example.com</span>
             <div class="mdl-layout-spacer"></div>
@@ -76,10 +76,10 @@
         wp_nav_menu( 
         	array( 
             'theme_location' 	=> 'primary',
-            'container'			=> 'nav',
+            'container'			  => 'nav',
             'container_class'	=> 'madison-navigation mdl-navigation mdl-color--blue-grey-800',
-            'items_wrap' 		=> '%3$s',
-            'walker'			=> new madison_drawer_walker_nav_menu()
+            'items_wrap'      => '%3$s',
+            'walker'          => new madison_drawer_walker_nav_menu()
         		) 
         	); 
         ?>
@@ -91,4 +91,5 @@
         </nav>
       </div>    
       <main class="mdl-layout__content mdl-color--grey-100">
-        <div id="content" class="site-content mdl-grid madison-content mdl-grid--no-spacing">
+      <!-- <div id="content" class="madison-content mdl-grid mdl-grid--no-spacing"> -->
+      <div id="content" class="madison-content mdl-grid m-npom">
