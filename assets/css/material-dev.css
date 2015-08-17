@@ -1,7 +1,8 @@
 /**
  * FOR DEVELOPMENT PURPOSES ONLY
  * This file is not to be used in the theme, only as a resource.
- * Theme will enqueue the minified file from the cdn.
+ * Theme will enqueue the minified file from the cdn, or create it's
+ * own compilied sass version.
  */
 
 /**
