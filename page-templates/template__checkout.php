@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Test Page
+ * Template Name: Checkout
  *
  * @package WordPress
  * @subpackage madison

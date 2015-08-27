@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 	<div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--5-col-desktop mdl-card mdl-shadow--2dp order-form">
-		<div class="mdl-card__title">Order Form
+		<div class="mdl-card__title mdl-card--border">Order Form
 		</div>
 		<div class="mdl-card__supporting-text">
 			<div class="starting-price-box">
@@ -111,7 +111,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 	<?php comments_template(); ?>
 
-<?php //	<div class="summary entry-summary"> ?>
+	<?php //	<div class="summary entry-summary"> ?>
+
 		<?php
 			/**
 			 * Madison unhooks all of these. Hook remains for other plugins.
@@ -129,7 +130,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 
-<?php //	</div><!-- .summary --> ?>
+	<?php //	</div><!-- .summary --> ?>
 
 	<?php
 		/**

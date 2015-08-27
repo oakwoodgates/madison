@@ -73,6 +73,8 @@ if ( ! comments_open() ) {
 								            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-required="true" /></p>',
 							),
 							'label_submit'  => __( 'Submit', 'woocommerce' ),
+						//	'class_submit'	=> 'submit mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--orange-500',
+					        'submit_button' => '<button name="%1$s" type="submit" id="%2$s" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--orange-500 %3$s" value="%4$s" />Submit Review</button>',
 							'logged_in_as'  => '',
 							'comment_field' => ''
 						);

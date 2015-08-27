@@ -36,7 +36,7 @@
 		<div class="site-branding mdl-layout__header-row">
 			<span class="site-title mdl-layout-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
           <div class="mdl-layout-spacer"></div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+       <!--   <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
               <i class="material-icons">search</i>
             </label>
@@ -44,22 +44,50 @@
               <input class="mdl-textfield__input" type="text" id="search" />
               <label class="mdl-textfield__label" for="search">Enter your query...</label>
             </div>
-          </div>
+          </div> -->
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn2">
+            <i class="material-icons">&#xE88F;</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn2">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul>
+
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-            <i class="material-icons">more_vert</i>
+            <i class="material-icons">&#xE7FD;</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
             <li class="mdl-menu__item">About</li>
             <li class="mdl-menu__item">Contact</li>
             <li class="mdl-menu__item">Legal information</li>
           </ul>
+
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn1">
+            <i class="material-icons">&#xE8CC;</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn1">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul> 
+
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn3">
+            <i class="material-icons">&#xE80D;</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn3">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul> 
+
         </div>     
     </header>
       <div class="madison-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="madison-drawer-header">
           <!-- <img src="//45.55.205.177/wp-content/uploads/2015/07/wpguru4u.jpg" class="madison-avatar"> -->
-          <div class="madison-avatar-dropdown">
-            <span>hello@example.com</span>
+ <!--          <div class="madison-avatar-dropdown">
+           <span>hello@example.com</span>
             <div class="mdl-layout-spacer"></div>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
               <i class="material-icons" role="presentation">arrow_drop_down</i>
@@ -69,8 +97,21 @@
               <li class="mdl-menu__item">hello@example.com</li>
               <li class="mdl-menu__item">info@example.com</li>
               <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
-            </ul>
-          </div>
+            </ul> 
+
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="accbtn">
+            <i class="material-icons">&#xE7FD;</i>
+          </button>
+ 
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="accbtn1">
+            <i class="material-icons">&#xE8CC;</i>
+          </button>
+
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="accbtn3">
+            <i class="material-icons">&#xE80D;</i>
+          </button>
+           
+          </div> -->
         </header>
         <?php 
         wp_nav_menu( 

@@ -128,15 +128,37 @@ function madison_widgets_init() {
 		'after_title'   => '</h3></header><div class="widget-content mdl-card__supporting-text">',
 	) );
 
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Single Product', 'madison' ),
 		'id'            => 'product-single',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="mdl-cell mdl-cell--8-col mdl-cell--12-col-desktop mdl-card mdl-shadow--2dp widget %2$s">',
+		'after_widget'  => '</div></aside>',
+		'before_title'  => '<header class="widget-header mdl-card__title"><h3 class="widget-title">',
+		'after_title'   => '</h3></header><div class="widget-content mdl-card__supporting-text">',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Single Product', 'madison' ),
+		'id'            => 'product-single-a',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop mdl-card mdl-shadow--2dp widget %2$s">',
+		'after_widget'  => '</div></aside>',
+		'before_title'  => '<header class="widget-header mdl-card__title"><h3 class="widget-title">',
+		'after_title'   => '</h3></header><div class="widget-content mdl-card__supporting-text">',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Single Product', 'madison' ),
+		'id'            => 'product-single-b',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp widget %2$s">',
 		'after_widget'  => '</div></aside>',
 		'before_title'  => '<header class="widget-header mdl-card__title"><h3 class="widget-title">',
 		'after_title'   => '</h3></header><div class="widget-content mdl-card__supporting-text">',
 	) );
+
 }
 add_action( 'widgets_init', 'madison_widgets_init' );
 
@@ -144,7 +166,9 @@ add_action( 'widgets_init', 'madison_widgets_init' );
  * Enqueue scripts and styles.
  */
 function madison_scripts() {
-	wp_enqueue_style( 'madison-mdl-roboto', '//fonts.googleapis.com/css?family=Roboto:300,400,500,700' );
+
+	$fonts = '//fonts.googleapis.com/css?family=Roboto+Mono:400,500,300,100|Roboto:100,400,300italic,300,700,500';
+	wp_enqueue_style( 'madison-mdl-roboto', $fonts );
 
 	wp_enqueue_style( 'madison-mdl-icons', '//fonts.googleapis.com/icon?family=Material+Icons' );
 
@@ -266,3 +290,17 @@ add_filter( 'gform_submit_button', 'mdl_my_submit', 10, 2 );
 function mdl_my_submit( $button, $form ) {
     return "<button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--blue-500' id='gform_submit_button_{$form['id']}'><span>Send Message</span></button>";
 }
+
+
+/**
+ * Foo_Widget
+ */
+require get_template_directory() . '/widgets/foo.php';
+require get_template_directory() . '/widgets/consultation.php';
+
+// register Foo_Widget widget
+function register_foo_widget() {
+    register_widget( 'Foo_Widget' );
+    register_widget( 'WPG_Ongoing_Widget' );
+}
+add_action( 'widgets_init', 'register_foo_widget' );

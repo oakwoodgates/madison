@@ -48,8 +48,13 @@ $url = $thumb['0'];
 
 
 ?>
-<li <?php // post_class( $classes ); ?> class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--2dp product-card">
-
+<?php if ( is_archive() ) : ?>
+	<li <?php // post_class( $classes ); ?> class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--2dp product-card">
+<?php elseif ( is_cart() ) : ?>
+	<li <?php // post_class( $classes ); ?> class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp product-card">
+<?php else : ?>
+	<li <?php // post_class( $classes ); ?> class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--3-col-desktop mdl-card mdl-shadow--2dp product-card">
+<?php endif; ?>
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 	<a class="mdl-card__media" href="<?php the_permalink() ?>">

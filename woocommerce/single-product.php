@@ -46,5 +46,9 @@ get_header( 'shop' ); ?>
 		 */
 //		do_action( 'woocommerce_sidebar' );
 	?>
-<?php get_sidebar( 'service' ); ?>
+<?php // get_sidebar( 'service' ); ?>
+
+<?php get_sidebar( 'service-a' ); ?>
+<h2>More info&hellip;</h2>
+<?php get_sidebar( 'service-b' ); ?>
 <?php get_footer( 'shop' ); ?>

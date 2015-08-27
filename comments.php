@@ -67,7 +67,7 @@ if ( post_password_required() ) {
         'title_reply'=>'Leave a Comment',
         // remove "Text or HTML to be displayed after the set of comment fields"
         'comment_notes_after' => '',
-        'submit_button' => '<button name="%1$s" type="submit" id="%2$s" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent %3$s" value="%4$s" />Submit Comment</button>',
+        'submit_button' => '<button name="%1$s" type="submit" id="%2$s" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--orange-500 %3$s" value="%4$s" />Submit Comment</button>',
         // redefine your own textarea (the comment body)
         'comment_field' => ' 
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><textarea class="mdl-textfield__input" rows="10" id="comment" name="comment" aria-required="true"></textarea>
