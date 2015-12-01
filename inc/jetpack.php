@@ -14,10 +14,11 @@ function madison_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
 		'render'    => 'madison_infinite_scroll_render',
-		'footer'    => 'page',
+		'footer'    => 'primary',
+		'wrapper'	=> false,
 	) );
 } // end function madison_jetpack_setup
-add_action( 'after_setup_theme', 'madison_jetpack_setup' );
+// add_action( 'after_setup_theme', 'madison_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.

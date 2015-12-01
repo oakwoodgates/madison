@@ -1,17 +1,14 @@
 /*
 Theme Name: madison
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme URI: http://wpguru4u.com/
+Author: WPguru4u
+Author URI: http://wpguru4u.com/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: madison
 Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 
 madison is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -43,18 +40,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust:     100%;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 article,
@@ -69,106 +62,102 @@ menu,
 nav,
 section,
 summary {
-	display: block;
+  display: block;
 }
 
 audio,
 canvas,
 progress,
 video {
-	display: inline-block;
-	vertical-align: baseline;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 audio:not([controls]) {
-	display: none;
-	height: 0;
+  display: none;
+  height: 0;
 }
 
 [hidden],
 template {
-	display: none;
+  display: none;
 }
 
 a {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 a:active,
 a:hover {
-	outline: 0;
+  outline: 0;
 }
 
 abbr[title] {
-	border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
 b,
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 dfn {
-	font-style: italic;
+  font-style: italic;
 }
 
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
 
 mark {
-	background: #ff0;
-	color: #000;
+  background: #ff0;
+  color: #000;
 }
 
 small {
-	font-size: 80%;
+  font-size: 80%;
 }
 
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-	top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-	bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 img {
-	border: 0;
+  border: 0;
 }
 
 svg:not(:root) {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 figure {
-	margin: 1em 40px;
+  margin: 1em 40px;
 }
 
 hr {
-	box-sizing: content-box;
-	height: 0;
+  box-sizing: content-box;
+  height: 0;
 }
 
 pre {
-	overflow: auto;
+  overflow: auto;
 }
 
 code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 button,
@@ -176,106 +165,96 @@ input,
 optgroup,
 select,
 textarea {
-	color: inherit;
-	font: inherit;
-	margin: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 button {
-	overflow: visible;
+  overflow: visible;
 }
 
 button,
 select {
-	text-transform: none;
+  text-transform: none;
 }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button;
-	cursor: pointer;
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 button[disabled],
 html input[disabled] {
-	cursor: default;
+  cursor: default;
 }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 input {
-	line-height: normal;
+  line-height: normal;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-	height: auto;
+  height: auto;
 }
 
 input[type="search"] {
-	-webkit-appearance: textfield;
-	box-sizing: content-box;
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
-	border: 0;
-	padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 textarea {
-	overflow: auto;
+  overflow: auto;
 }
 
 optgroup {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td,
 th {
-	padding: 0;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-	color: #404040;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
-}
 
 h1,
 h2,
@@ -283,353 +262,200 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
-}
-
-p {
-	margin-bottom: 1.5em;
+  clear: both;
 }
 
 dfn,
 cite,
 em,
 i {
-	font-style: italic;
+  font-style: italic;
 }
 
 blockquote {
-	margin: 0 1.5em;
+  margin: 0 1.5em;
 }
 
 address {
-	margin: 0 0 1.5em;
+  margin: 0 0 1.5em;
 }
 
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
 }
 
 code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+  border-bottom: 1px dotted #666;
+  cursor: help;
 }
 
 mark,
 ins {
-	background: #fff9c0;
-	text-decoration: none;
+  background: #fff9c0;
+  text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+  font-size: 125%;
 }
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
-}
-
-body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+  box-sizing: inherit;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
+  content: "";
 }
 
 blockquote,
 q {
-	quotes: "" "";
+  quotes: "" "";
 }
 
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
 }
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+  margin: 0 0 1.5em 3em;
 }
 
 ul {
-	list-style: disc;
+  list-style: disc;
 }
 
 ol {
-	list-style: decimal;
+  list-style: decimal;
 }
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+  margin-bottom: 0;
+  margin-left: 1.5em;
 }
 
 dt {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+  margin: 0 1.5em 1.5em;
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
 }
 
 table {
-	margin: 0 0 1.5em;
-	width: 100%;
+  margin: 0 0 1.5em;
+  width: 100%;
 }
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mdl-tabs__tab-bar,
+.mdl-card__title,
+.mdl-button {
+  font-family: "Roboto Mono", "Helvetica", "Arial", sans-serif; 
 }
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+p,
+td.product-name,
+.product-card .mdl-card__supporting-text,
+.order-form h3.tm-epo-field-label,
+.order-form h5.tm-epo-field-label,
+span.tm-label,
+.service-pillars .foottitle {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
 }
 
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+p,
+#comments .mdl-card__title,
+.woocommerce h3.comment-reply-title,
+span.tm-label {
+  font-weight: 300;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-	color: #111;
+h1 {
+  font-weight: 400;
+}
+p,
+span.tm-label {
+  font-size: 15px;
+}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px;
+h4.product-question,
+h3.gform_title {
+  font-size: 1.6em;
 }
 
-textarea {
-	padding-left: 3px;
-	width: 100%;
+.mdl-button,
+.service-pillars .foottitle,
+.service-pillars .subtitle {
+  font-size: 16px;
 }
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-a {
-	color: royalblue;
+.product .mdl-card__title-text {
+  font-weight: 400;
 }
-
-a:visited {
-	color: purple;
+.cross-sells h2 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
 }
-
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
+.service-pillars .subtitle {
+  font-weight: 500;
 }
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
-	outline: 0;
-}
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-.main-navigation .current_page_item > a,
-.main-navigation .current-menu-item > a,
-.main-navigation .current_page_ancestor > a {
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
-}
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -685,38 +511,10 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-	content: "";
-	display: table;
-}
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-	clear: both;
-}
-
-/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+/*	margin: 0 0 1.5em; */
 }
 
 /* Make sure select elements fit in widgets. */
@@ -739,9 +537,6 @@ a:active {
 	display: block;
 }
 
-.hentry {
-	margin: 0 0 1.5em;
-}
 
 .byline,
 .updated:not(.published) {
@@ -753,16 +548,6 @@ a:active {
 	display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
 
 /*--------------------------------------------------------------
 ## Asides
@@ -886,3 +671,612 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+.madison-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+.madison-layout .madison-header .mdl-textfield {
+  padding-top: 27px;
+}
+.madison-layout .mdl-layout__header .mdl-layout__drawer-button {
+  color: #fff;
+}
+.mdl-layout__drawer .avatar {
+  margin-bottom: 16px;
+}
+.madison-drawer {
+  border: none;
+}
+/* iOS Safari specific workaround */
+.madison-drawer .mdl-menu__container {
+  z-index: -1;
+}
+.madison-drawer .madison-navigation {
+  z-index: -2;
+}
+/* END iOS Safari specific workaround */
+.madison-drawer .mdl-menu .mdl-menu__item{
+  display: flex;
+  align-items: center;
+}
+.madison-drawer-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  height: 151px;
+}
+.madison-avatar-dropdown {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.madison-navigation {
+  flex-grow: 1;
+}
+.madison-layout .madison-navigation .mdl-navigation__link {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 500;
+}
+.madison-layout .madison-navigation .mdl-navigation__link:hover {
+  background-color: #455A64;
+  color: #E7EBEC;
+}
+.madison-navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.56);
+  margin-right: 32px;
+}
+
+.madison-content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media (min-width: 38.75em) {
+  .mdl-grid.mdl-grid--no-spacing.madison-content {
+    padding:0 1%;
+  }
+}
+@media (min-width: 1025px) {
+  .mdl-grid.mdl-grid--no-spacing.madison-content {
+    padding:0 2%;
+  }
+}
+.madison-charts {
+  align-items: center;
+}
+.madison-chart:nth-child(1) {
+  color: #ACEC00;
+}
+.madison-chart:nth-child(2) {
+  color: #00BBD6;
+}
+.madison-chart:nth-child(3) {
+  color: #BA65C9;
+}
+.madison-chart:nth-child(4) {
+  color: #EF3C79;
+}
+.madison-graphs {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+/* TODO: Find a proper solution to have the graphs
+ * not float around outside their container in IE10/11.
+ * Using a browserhacks.com solution for now.
+ */
+_:-ms-input-placeholder, :root .madison-graphs {
+  min-height: 664px;
+}
+_:-ms-input-placeholder, :root .madison-graph {
+  max-height: 300px;
+}
+/* TODO end */
+.madison-graph:nth-child(1) {
+  color: #00b9d8;
+}
+.madison-graph:nth-child(2) {
+  color: #d9006e;
+}
+
+.madison-cards {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.madison-cards .madison-separator {
+  height: 32px;
+}
+.madison-cards .mdl-card__title.mdl-card__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.madison-cards ul {
+  padding: 0;
+}
+.madison-cards h3 {
+  font-size: 1em;
+}
+.madison-updates .mdl-card__title {
+  min-height: 200px;
+  background-image: url('images/dog.png');
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+}
+.madison-cards .mdl-card__actions a {
+  color: #00BCD4;
+  text-decoration: none;
+}
+
+.madison-options h3 {
+  margin: 0;
+}
+.madison-options .mdl-checkbox__box-outline {
+  border-color: rgba(255, 255, 255, 0.89);
+}
+.madison-options ul {
+  margin: 0;
+  list-style-type: none;
+}
+.madison-options li {
+  margin: 4px 0;
+}
+.madison-options .material-icons {
+  color: rgba(255, 255, 255, 0.89);
+}
+.madison-options .mdl-card__actions {
+  height: 64px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+
+
+
+  .madison-card-event > .mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+  }
+
+#commentform #comment, #commentform .mdl-textfield {
+    width: 100%!important;
+}
+
+/* Titles */
+h1.page-title,
+h1.entry-title {
+  padding: 0 5px;
+  margin: 0;
+}
+
+h3.widget-title {
+  font-size: 24px;
+  line-height: 1.1;
+  margin:0;
+}
+
+/* header tweaks */
+@media screen and (min-width: 1025px) {
+  .mdl-layout__header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #content {
+    margin-top: 64px;
+  }
+}
+.mdl-layout__header {
+  margin-left: 0!important;
+  width: 100%!important;
+}
+
+/* masonry things and such */
+.mason-container {
+  margin: 0 auto !important;
+}
+.mason-container .mdl-card {
+    margin:10px 10px;
+}
+
+/* 
+  reset weird stuff until google figures it out 
+  helps with mobile and weird occasional scrolling issue
+*/
+.madison-drawer.mdl-layout__drawer,
+.madison-header.mdl-layout__header {
+  position: fixed;
+}
+
+.mdl-layout,
+.mdl-layout__content {
+  overflow: hidden;
+}
+
+.mdl-layout__container {
+  position: relative;
+}
+
+/* mdl overrides */
+a {
+  color:#00BCD4;
+}
+.mdl-card__media {
+  background-color: #fff;
+}
+/* the painful reviews layout I wanted */
+@media (min-width: 840px){
+  .madison-reviews.mdl-cell--5-col-desktop {
+      width:41.6666666667%;
+      flex-flow:column wrap;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;      
+  }
+  #reviews.right{
+    -webkit-flex: 2 2 auto;
+    -ms-flex: 2 2 auto;    
+    flex: 2 2 auto;
+  }
+}
+
+@media (max-width: 839px) {
+  .madison-reviews.mdl-cell--8-col-tablet {
+      width: 100%;
+  }
+}
+
+.child {
+    position: absolute;
+    height: calc(100% - 51px);
+    padding-bottom: 10px!important;
+}
+
+.scrollable {
+     overflow-y:auto;
+}
+/* woo overrides */
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+  width:100%;
+}
+.woocommerce div.product div.images, .woocommerce div.product div.summary {
+  margin-bottom: 0;
+}
+.woocommerce #reviews #comments ol.commentlist{
+  padding:0;
+}
+
+.woocommerce .woocommerce-message {
+  margin-bottom: 0!important;
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  width: 100%;
+}
+/* Product Archive Cards */
+.product-card h3 {
+  font-size: 20px
+}
+
+.product-card a.mdl-card__title {
+  text-decoration: none;
+}
+
+.product-card .star-rating {
+  font-size: .7em;
+  margin-top: -10px;
+  margin-right: -10px;
+  color: #FFA726;
+}
+.woocommerce .product-card .star-rating:before {
+  color:#FFA726;
+}
+.woocommerce .star-rating {
+  color:#FFA726;
+}
+/* because sometimes we like to be full size */
+.product-card .mdl-card__supporting-text,
+.order-form .mdl-card__supporting-text,
+.product .mdl-card__supporting-text {
+  width:100%;
+}
+
+.product-card .mdl-card__supporting-text {
+  padding-top:0;
+}
+
+.order-form .mdl-card__supporting-text {
+  padding-bottom: 0;
+}
+
+.product-card .mdl-card__supporting-text p {
+  line-height: 1.5em;
+}
+.product-card .mdl-card__actions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.product-card span.price {
+  flex-grow:1;
+}
+
+.product-card span.onsale {
+  left: -0.1em;
+  min-width: 4em;
+  border-radius: 0 0 50% 0;
+  top: -0.4em;
+}
+/* order form */
+.tm-extra-product-options .tm-epo-field-label {
+  font-weight: 500;
+}
+.order-form .mdl-card__title {
+  font-size: 1.4em;
+}
+.order-form h3.tm-epo-field-label,
+.order-form h5.tm-epo-field-label {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 300;
+  letter-spacing: .02em;
+}
+.order-form .mdl-radio {
+  font-size: 14px;
+}
+.order-form li .amount {
+  color:#A0A0A0;
+}
+.order-form .tm-epo-totals {
+  padding-top: 0;
+}
+.order-form dl {
+  margin:0;
+}
+.woocommerce .order-form form.cart {
+  margin-bottom: 1.2em!important;
+}
+.order-form .tm-extra-product-options .tm-extra-product-options-field {
+  margin:0;
+}
+.order-form .mdl-checkbox.is-checked .mdl-checkbox__tick-outline,
+.order-form .mdl-radio__inner-circle {
+  background-color: #4CAF50;
+}
+.order-form .mdl-checkbox.is-checked .mdl-checkbox__box-outline,
+.order-form .mdl-radio.is-checked .mdl-radio__outer-circle {
+  border-color:#4CAF50;
+}
+.order-form .mdl-checkbox__ripple-container .mdl-ripple,
+.order-form .mdl-radio__ripple-container .mdl-ripple {
+  background-color: #4CAF50;
+}
+.order-form .mdl-radio.is-upgraded,
+.order-form .mdl-checkbox.is-upgraded {
+  padding-top: 2px;
+  padding-left: 18px;
+}
+.starting-price-box div {
+  display: inline-block;
+}
+.starting-price-box .base-text {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.starting-price-box .price {
+  padding-left: 5px;
+  vertical-align: baseline;  
+}
+/* helpers */
+.npom {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 839px) {
+  .m-npom {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin:0 auto;
+    padding:0;
+    vertical-align: top;
+    img{
+        text-align:center;
+    }
+}
+
+.w100 {
+  width:100%;
+}
+/* things and stuff */
+.order-form .mdl-card {
+  width: 100%;
+}
+
+  .related-services {
+      width: 100%;
+  }
+
+.related-services h2 {
+  margin-left: 8px;
+}
+
+.tmcp-field-wrap.mdl-js-radio .amount {
+  float:right;
+}
+
+.woocommerce h3.comment-reply-title {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+  line-height: 1;
+  padding: 0 0 16px 0;
+}
+
+p.stars a {
+  color: #FFA726;
+}
+
+.mdl-card.small-height {
+  min-height: 50px;
+}
+
+p.woocommerce-verification-required {
+  padding: 16px;
+  margin: 0;
+  text-align: center;  
+}
+
+.mdl-card__supporting-text {
+  color:#333;
+}
+
+.gform_validation_container, 
+.gform_wrapper .gform_validation_container, 
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container, 
+body .gform_wrapper li.gform_validation_container, 
+body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
+  display: none!important;
+  position: absolute!important;
+  left: -9000px; 
+}
+#gform_1 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#gform_1 .gfield_required {
+  display: none;
+}
+#gform_1 .mdl-textfield {
+  display:block;
+}
+.mdl-textfield__label {
+  color:#555;
+}
+#gform_1 .mdl-textfield__input {
+  border-color:#aaa;
+}
+#gform_1 ul {
+  margin:0;
+  padding:0;
+}
+textarea#input_1_3 {
+  height: 150px;
+  max-width: 100%;
+}
+#gform_1 #field_1_3 .mdl-textfield__label:after {
+  bottom:26px;
+}
+#gform_submit_button_1 {
+  float: right;
+}
+input#input_1_1, 
+input#input_1_2, 
+textarea#input_1_3 {
+  width: 100%;
+}
+
+.gfield_description.validation_message {
+  background-color: #EF5350;
+  padding: 5px 0;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.gfield_error input, .gfield_error textarea {
+  border-color: #EF5350;
+  border: 2px solid #EF5350;
+  margin-bottom: 3px;
+}
+.comment-form button {
+  float: right;
+}
+
+.callout-icon {
+  position: absolute;
+  z-index: -1;
+  left: -46px;
+  bottom: -55px;
+  
+}
+.callout-icon i{
+  font-size: 352px;
+  color: #fff;
+  opacity: 0.6;
+}
+.service-pillars .mdl-card__actions {
+  text-align: right;
+}
+.service-pillars .mdl-card__supporting-text {
+  text-align: right;
+  align-self: flex-end;
+}
+.service-pillars .mdl-card {
+  border-radius: 0;
+}
+.service-pillars a.mdl-button {
+  color:#fff;
+}
+.service-pillars ul{
+  list-style-position: inside;
+  list-style-type: circle;
+  margin-left:0;
+  margin-top:5px;
+  padding:0;
+}
+.service-pillars .foottitle {
+  font-style: italic;
+}
+.service-pillars .final-widget .mdl-card__supporting-text,
+.service-pillars .final-widget .mdl-card__actions {
+    width: 90%;
+    align-self: flex-start;
+}
+.service-pillars .final-widget h3.widget-title {
+  text-align: center;
+  width: 100%;
+  color: #CFD8DC;
+}
+.service-pillars .final-widget .mdl-card__supporting-text {
+  color:#CFD8DC;
+}
+.service-pillars .final-widget .subtitle {
+  color: #ECEFF1;
+}
+.widget_wpg_consultation_widget {}

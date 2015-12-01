@@ -69,3 +69,10 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', 'madison_render_title' );
 endif;
+
+/**
+ * Set the display status of the Toolbar for the front side of the website
+ *
+ * @link https://codex.wordpress.org/Function_Reference/show_admin_bar
+ */
+add_filter('show_admin_bar', '__return_false');
